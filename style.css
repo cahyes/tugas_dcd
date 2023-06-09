@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+/* navbar */
+header {
+  background-color: #ffb95c;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+}
+nav .logo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+nav ul {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+/* home */
+.home,
+.myProject {
+  background-color: #ffb95c;
+}
+
+.home .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.home .desc {
+  margin-right: 100px;
+  padding: 20px;
+  line-height: 40px;
+}
+.home .foto img {
+  width: 500px;
+}
+.home h1 {
+  font-size: 40px;
+  line-height: 1.5;
+}
+.home p {
+  font-size: 25px;
+}
+.home button {
+  margin-top: 20px;
+  background-color: blanchedalmond;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* my services */
+
+.myservices .container {
+  height: auto;
+  text-align: center;
+  padding: 100px 0;
+  box-sizing: content-box;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  margin-top: 50px;
+  width: 300px;
+  padding: 20px 10px;
+  line-height: 2.5vh;
+  box-shadow: 0px 0px 8px gray;
+  border-radius: 5%;
+}
+
+/* untuk myproject */
+.myProject .container {
+  padding: 50px 0px;
+  text-align: center;
+  padding: 100px 0;
+  box-sizing: content-box;
+}
+.imgProject {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.imgProject img {
+  width: 200px;
+  margin: 10px;
+}
+.left {
+  position: absolute;
+  width: 50px;
+  margin-left: 10px;
+}
+
+/* article */
+.article {
+  padding: 50px 0px;
+}
+article {
+  float: left;
+  max-width: 900px;
+}
+aside {
+  float: right;
+}
+.side {
+  max-width: 300px;
+  padding: 20px 10px;
+  border-width: 0px 0px 1px 0px;
+  border-style: dashed;
+  border-color: black;
+}
+.side img {
+  width: 200px;
+}
+
+.clear {
+  clear: both;
+}
+/* footer */
+footer {
+  padding: 50px 30px;
+  background-color: #ffb95c;
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  line-height: 25px;
+}
+footer ul li {
+  list-style: none;
+}
+.contact img {
+  margin-top: 30px;
+  width: 30px;
+}
+.sosmed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+.created {
+  display: flex;
+  width: 1200px;
+  margin: 30px auto;
+}
+.created p {
+  margin: auto;
+}
+
+/* ini untuk tablet */
+@media (max-width: 1200px) {
+  header {
+    background-color: #ffb95c;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+  }
+  nav ul {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    list-style: none;
+    width: 10%;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+}
+/* hover-active */
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.card:hover {
+  box-shadow: none;
+}
